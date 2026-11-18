@@ -1,0 +1,67 @@
+{
+  "$description": "Примитивы уровня 1 из исходного брифа. Привязывайте макеты через семантические алиасы.",
+  "color": {
+    "background": {
+      "canvas": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.97,
+            0.98,
+            0.99
+          ]
+        },
+        "$description": "Нейтральная заливка для базовой поверхности."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.94,
+            0.95,
+            0.97
+          ]
+        },
+        "$description": "Нейтральная заливка для вторичной поверхности."
+      }
+    },
+    "action": {
+      "primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.23,
+            0.51,
+            0.96
+          ]
+        },
+        "$description": "Акцент из брифа для будущих семантических алиасов действий."
+      }
+    }
+  },
+  "spacing": {
+    "gap": {
+      "md": {
+        "$type": "dimension",
+        "$value": {
+          "value": 16,
+          "unit": "px"
+        },
+        "$description": "Базовый средний шаг между элементами."
+      }
+    }
+  },
+  "radius": {
+    "md": {
+      "$type": "dimension",
+      "$value": {
+        "value": 12,
+        "unit": "px"
+      },
+      "$description": "Базовое среднее скругление."
+    }
+  }
+}
