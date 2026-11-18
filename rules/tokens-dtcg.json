@@ -1,67 +1,3178 @@
 {
-  "$description": "Примитивы уровня 1 из исходного брифа. Привязывайте макеты через семантические алиасы.",
-  "color": {
-    "background": {
-      "canvas": {
-        "$type": "color",
-        "$value": {
-          "colorSpace": "srgb",
-          "components": [
-            0.97,
-            0.98,
-            0.99
-          ]
+  "$description": "Локальные Variables проекта «Здоровье». Цвета сгруппированы по режимам Figma, размеры общие.",
+  "$extensions": {
+    "com.design-harness.figma": {
+      "source": "https://www.figma.com/design/u0EdPHQOmvdQuc7158uN5C/Untitled?node-id=77-4755",
+      "collections": [
+        {
+          "name": "Health · Colors",
+          "modes": [
+            "Light",
+            "Dark"
+          ],
+          "defaultMode": "Light"
         },
-        "$description": "Нейтральная заливка для базовой поверхности."
-      },
-      "subtle": {
-        "$type": "color",
-        "$value": {
-          "colorSpace": "srgb",
-          "components": [
-            0.94,
-            0.95,
-            0.97
-          ]
-        },
-        "$description": "Нейтральная заливка для вторичной поверхности."
-      }
-    },
-    "action": {
-      "primary": {
-        "$type": "color",
-        "$value": {
-          "colorSpace": "srgb",
-          "components": [
-            0.23,
-            0.51,
-            0.96
-          ]
-        },
-        "$description": "Акцент из брифа для будущих семантических алиасов действий."
-      }
+        {
+          "name": "Health · Dimensions",
+          "modes": [
+            "Value"
+          ],
+          "defaultMode": "Value"
+        }
+      ]
     }
   },
-  "spacing": {
-    "gap": {
-      "md": {
-        "$type": "dimension",
-        "$value": {
-          "value": 16,
-          "unit": "px"
+  "color": {
+    "light": {
+      "bg": {
+        "page": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1
+          },
+          "$description": "Фон страницы.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "bg/page",
+              "id": "VariableID:235:1975",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
         },
-        "$description": "Базовый средний шаг между элементами."
+        "surface": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9450980424880981,
+              0.9607843160629272,
+              0.9725490212440491
+            ],
+            "alpha": 1
+          },
+          "$description": "Обычная заливка карточек.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "bg/surface",
+              "id": "VariableID:235:1977",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "fg": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.13159902393817902,
+              0.133303701877594,
+              0.1520548313856125
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "fg/default",
+              "id": "VariableID:235:1986",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8627451062202454,
+              0.886274516582489,
+              0.9254902005195618
+            ],
+            "alpha": 1
+          },
+          "$description": "Обводка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "border/default",
+              "id": "VariableID:235:1997",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "accent": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1764705926179886,
+              0.658823549747467,
+              0.5372549295425415
+            ],
+            "alpha": 1
+          },
+          "$description": "Акцент Health.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/default",
+              "id": "VariableID:250:2067",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3512735366821289,
+              0.7400726079940796,
+              0.6420825719833374
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/soft",
+              "id": "VariableID:332:3679",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5392156839370728,
+              0.7313725352287292,
+              0.6823529601097107
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/muted",
+              "id": "VariableID:332:3680",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.06666667014360428,
+              0.3933333456516266,
+              0.3100000023841858
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/hover",
+              "id": "VariableID:332:3681",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.054901961237192154,
+              0.3239215612411499,
+              0.2552941143512726
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/active",
+              "id": "VariableID:332:3682",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-accent": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/on-accent",
+              "id": "VariableID:332:3683",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9058823585510254,
+              0.9450980424880981,
+              0.9372549057006836
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-default",
+              "id": "VariableID:332:3684",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9529411792755127,
+              0.9725490212440491,
+              0.9686274528503418
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-soft",
+              "id": "VariableID:332:3685",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9725490212440491,
+              0.9843137264251709,
+              0.9803921580314636
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-muted",
+              "id": "VariableID:332:3686",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8156862854957581,
+              0.8941176533699036,
+              0.8745098114013672
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-hover",
+              "id": "VariableID:332:3687",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7215686440467834,
+              0.8392156958580017,
+              0.8078431487083435
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-active",
+              "id": "VariableID:332:3688",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0784313753247261,
+              0.4627451002597809,
+              0.364705890417099
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/on-container",
+              "id": "VariableID:332:3689",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "neutral": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.27450981736183167,
+              0.34117648005485535,
+              0.41960784792900085
+            ],
+            "alpha": 1
+          },
+          "$description": "Нейтральный цвет Health.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/default",
+              "id": "VariableID:250:2078",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.41960784792900085,
+              0.47294119000434875,
+              0.5356862545013428
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/soft",
+              "id": "VariableID:332:3690",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6735294461250305,
+              0.703529417514801,
+              0.7388235330581665
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/muted",
+              "id": "VariableID:332:3691",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.24188236892223358,
+              0.3016470670700073,
+              0.37254902720451355
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/hover",
+              "id": "VariableID:332:3692",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.21741177141666412,
+              0.2720000147819519,
+              0.33725491166114807
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/active",
+              "id": "VariableID:332:3693",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-neutral": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/on-neutral",
+              "id": "VariableID:332:3694",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.929411768913269,
+              0.9333333373069763,
+              0.9411764740943909
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-default",
+              "id": "VariableID:332:3695",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9647058844566345,
+              0.9686274528503418,
+              0.9725490212440491
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-soft",
+              "id": "VariableID:332:3696",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9764705896377563,
+              0.9803921580314636,
+              0.9843137264251709
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-muted",
+              "id": "VariableID:332:3697",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8549019694328308,
+              0.8666666746139526,
+              0.8823529481887817
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-hover",
+              "id": "VariableID:332:3698",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7803921699523926,
+              0.8039215803146362,
+              0.8274509906768799
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-active",
+              "id": "VariableID:332:3699",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.27450981736183167,
+              0.34117648005485535,
+              0.41960784792900085
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/on-container",
+              "id": "VariableID:332:3700",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "success": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.03921568766236305,
+              0.7960784435272217,
+              0.35686275362968445
+            ],
+            "alpha": 1
+          },
+          "$description": "Успех. Палитра Ростелекома, Rostelecom Default.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "success/default",
+              "id": "VariableID:250:2090",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "warning": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9921568632125854,
+              0.6509804129600525,
+              0.062745101749897
+            ],
+            "alpha": 1
+          },
+          "$description": "Предупреждение. Палитра Ростелекома, Rostelecom Default.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/default",
+              "id": "VariableID:250:2102",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9937254786491394,
+              0.7207843065261841,
+              0.25019606947898865
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/soft",
+              "id": "VariableID:332:3701",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9960784316062927,
+              0.8254902362823486,
+              0.5313725471496582
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/muted",
+              "id": "VariableID:332:3702",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.84333336353302,
+              0.5533333420753479,
+              0.0533333346247673
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/hover",
+              "id": "VariableID:332:3703",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.6945098042488098,
+              0.4556863009929657,
+              0.0439215712249279
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/active",
+              "id": "VariableID:332:3704",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-warning": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/on-warning",
+              "id": "VariableID:332:3705",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.9647058844566345,
+              0.9058823585510254
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-default",
+              "id": "VariableID:332:3706",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.9843137264251709,
+              0.9529411792755127
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-soft",
+              "id": "VariableID:332:3707",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.9882352948188782,
+              0.9725490212440491
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-muted",
+              "id": "VariableID:332:3708",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.929411768913269,
+              0.8117647171020508
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-hover",
+              "id": "VariableID:332:3709",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9960784316062927,
+              0.8941176533699036,
+              0.7176470756530762
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-active",
+              "id": "VariableID:332:3710",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5533109903335571,
+              0.3630419969558716,
+              0.034992001950740814
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/on-container",
+              "id": "VariableID:332:3711",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "error": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.14901961386203766,
+              0.14901961386203766
+            ],
+            "alpha": 1
+          },
+          "$description": "Ошибка. Палитра Ростелекома, Rostelecom Default.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/default",
+              "id": "VariableID:250:2114",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.31921568512916565,
+              0.31921568512916565
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/soft",
+              "id": "VariableID:332:3712",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.5745097994804382,
+              0.5745097994804382
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/muted",
+              "id": "VariableID:332:3713",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8500000238418579,
+              0.12666666507720947,
+              0.12666666507720947
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/hover",
+              "id": "VariableID:332:3714",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.699999988079071,
+              0.10431373119354248,
+              0.10431373119354248
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/active",
+              "id": "VariableID:332:3715",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-error": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/on-error",
+              "id": "VariableID:332:3716",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.9137254953384399,
+              0.9137254953384399
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-default",
+              "id": "VariableID:332:3717",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.95686274766922,
+              0.95686274766922
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-soft",
+              "id": "VariableID:332:3718",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.9725490212440491,
+              0.9725490212440491
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-muted",
+              "id": "VariableID:332:3719",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.8313725590705872,
+              0.8313725590705872
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-hover",
+              "id": "VariableID:332:3720",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.7450980544090271,
+              0.7450980544090271
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-active",
+              "id": "VariableID:332:3721",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8100000023841858,
+              0.12070588767528534,
+              0.12070588767528534
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/on-container",
+              "id": "VariableID:332:3722",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "blue": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.14509804546833038,
+            0.4745098054409027,
+            0.8980392217636108
+          ],
+          "alpha": 1
+        },
+        "$extensions": {
+          "com.design-harness.figma": {
+            "name": "blue",
+            "id": "VariableID:334:6856",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "dark": {
+      "bg": {
+        "page": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.07058823853731155,
+              0.0941176488995552,
+              0.125490203499794
+            ],
+            "alpha": 1
+          },
+          "$description": "Фон страницы.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "bg/page",
+              "id": "VariableID:235:1975",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "surface": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.10588235408067703,
+              0.1411764770746231,
+              0.1882352977991104
+            ],
+            "alpha": 1
+          },
+          "$description": "Обычная заливка карточек.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "bg/surface",
+              "id": "VariableID:235:1977",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "fg": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              1,
+              1
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "fg/default",
+              "id": "VariableID:235:1986",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "border": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.23137255012989044,
+              0.29411765933036804,
+              0.3764705955982208
+            ],
+            "alpha": 1
+          },
+          "$description": "Обводка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "border/default",
+              "id": "VariableID:235:1997",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "accent": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4117647111415863,
+              0.8666666746139526,
+              0.7333333492279053
+            ],
+            "alpha": 1
+          },
+          "$description": "Акцент Health.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/default",
+              "id": "VariableID:250:2067",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3117647171020508,
+              0.7454901933670044,
+              0.6227450966835022
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/soft",
+              "id": "VariableID:332:3679",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.21176470816135406,
+              0.6243137121200562,
+              0.5121568441390991
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/muted",
+              "id": "VariableID:332:3680",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7058823704719543,
+              0.9333333373069763,
+              0.8666666746139526
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/hover",
+              "id": "VariableID:332:3681",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8823529481887817,
+              0.9733333587646484,
+              0.9466666579246521
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/active",
+              "id": "VariableID:332:3682",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-accent": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/on-accent",
+              "id": "VariableID:332:3683",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.09803921729326248,
+              0.20000000298023224,
+              0.20392157137393951
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-default",
+              "id": "VariableID:332:3684",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.08627451211214066,
+              0.14901961386203766,
+              0.16470588743686676
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-soft",
+              "id": "VariableID:332:3685",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0784313753247261,
+              0.12156862765550613,
+              0.14509804546833038
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-muted",
+              "id": "VariableID:332:3686",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.11372549086809158,
+              0.2549019753932953,
+              0.24313725531101227
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-hover",
+              "id": "VariableID:332:3687",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.125490203499794,
+              0.30588236451148987,
+              0.27843138575553894
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/container-active",
+              "id": "VariableID:332:3688",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4117647111415863,
+              0.8666666746139526,
+              0.7333333492279053
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "accent/on-container",
+              "id": "VariableID:332:3689",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "neutral": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7960784435272217,
+              0.8274509906768799,
+              0.8823529481887817
+            ],
+            "alpha": 1
+          },
+          "$description": "Нейтральный цвет Health.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/default",
+              "id": "VariableID:250:2078",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.639607846736908,
+              0.6815686225891113,
+              0.7435294389724731
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/soft",
+              "id": "VariableID:332:3690",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4831372797489166,
+              0.5356862545013428,
+              0.6047058701515198
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/muted",
+              "id": "VariableID:332:3691",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8980392217636108,
+              0.9137254953384399,
+              0.9411764740943909
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/hover",
+              "id": "VariableID:332:3692",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9592157006263733,
+              0.9654902219772339,
+              0.9764705896377563
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/active",
+              "id": "VariableID:332:3693",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-neutral": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/on-neutral",
+              "id": "VariableID:332:3694",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.15294118225574493,
+              0.18431372940540314,
+              0.21960784494876862
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-default",
+              "id": "VariableID:332:3695",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.11372549086809158,
+              0.13725490868091583,
+              0.1725490242242813
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-soft",
+              "id": "VariableID:332:3696",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.09019608050584793,
+              0.11764705926179886,
+              0.14901961386203766
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-muted",
+              "id": "VariableID:332:3697",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.19607843458652496,
+              0.22745098173618317,
+              0.2705882489681244
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-hover",
+              "id": "VariableID:332:3698",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.23529411852359772,
+              0.2705882489681244,
+              0.3176470696926117
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/container-active",
+              "id": "VariableID:332:3699",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.7960784435272217,
+              0.8274509906768799,
+              0.8823529481887817
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "neutral/on-container",
+              "id": "VariableID:332:3700",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "success": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.5215686559677124,
+              0.8980392217636108,
+              0.6784313917160034
+            ],
+            "alpha": 1
+          },
+          "$description": "Успех. Палитра Ростелекома, Rostelecom Default.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "success/default",
+              "id": "VariableID:250:2090",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "warning": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9960784316062927,
+              0.8274509906768799,
+              0.5333333611488342
+            ],
+            "alpha": 1
+          },
+          "$description": "Предупреждение. Палитра Ростелекома, Rostelecom Default.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/default",
+              "id": "VariableID:250:2102",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9949019551277161,
+              0.7745097875595093,
+              0.3921568691730499
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/soft",
+              "id": "VariableID:332:3701",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9937254786491394,
+              0.7215686440467834,
+              0.250980406999588
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/muted",
+              "id": "VariableID:332:3702",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9980392456054688,
+              0.9137254953384399,
+              0.7666666507720947
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/hover",
+              "id": "VariableID:332:3703",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9992156624794006,
+              0.9654902219772339,
+              0.9066666960716248
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/active",
+              "id": "VariableID:332:3704",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-warning": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/on-warning",
+              "id": "VariableID:332:3705",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2549019753932953,
+              0.21960784494876862,
+              0.14901961386203766
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-default",
+              "id": "VariableID:332:3706",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.16470588743686676,
+              0.1568627506494522,
+              0.13725490868091583
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-soft",
+              "id": "VariableID:332:3707",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.11764705926179886,
+              0.125490203499794,
+              0.13333334028720856
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-muted",
+              "id": "VariableID:332:3708",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3490196168422699,
+              0.2823529541492462,
+              0.16470588743686676
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-hover",
+              "id": "VariableID:332:3709",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.43921568989753723,
+              0.3450980484485626,
+              0.1764705926179886
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/container-active",
+              "id": "VariableID:332:3710",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9960784316062927,
+              0.8274509906768799,
+              0.5333333611488342
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "warning/on-container",
+              "id": "VariableID:332:3711",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "error": {
+        "default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.5764706134796143,
+              0.5764706134796143
+            ],
+            "alpha": 1
+          },
+          "$description": "Ошибка. Палитра Ростелекома, Rostelecom Default.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/default",
+              "id": "VariableID:250:2114",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.44823530316352844,
+              0.44823530316352844
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкий оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/soft",
+              "id": "VariableID:332:3712",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.320000022649765,
+              0.320000022649765
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённый оттенок.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/muted",
+              "id": "VariableID:332:3713",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.7882353067398071,
+              0.7882353067398071
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/hover",
+              "id": "VariableID:332:3714",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.9152941107749939,
+              0.9152941107749939
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/active",
+              "id": "VariableID:332:3715",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "on-error": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0,
+              0,
+              0
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на насыщенной заливке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/on-error",
+              "id": "VariableID:332:3716",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        },
+        "container-default": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.2549019753932953,
+              0.1411764770746231,
+              0.16470588743686676
+            ],
+            "alpha": 1
+          },
+          "$description": "Основная подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-default",
+              "id": "VariableID:332:3717",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-soft": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.16470588743686676,
+              0.11764705926179886,
+              0.14509804546833038
+            ],
+            "alpha": 1
+          },
+          "$description": "Мягкая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-soft",
+              "id": "VariableID:332:3718",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-muted": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.11764705926179886,
+              0.10588235408067703,
+              0.13333334028720856
+            ],
+            "alpha": 1
+          },
+          "$description": "Приглушённая подложка.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-muted",
+              "id": "VariableID:332:3719",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-hover": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.3490196168422699,
+              0.16078431904315948,
+              0.18431372940540314
+            ],
+            "alpha": 1
+          },
+          "$description": "Наведение на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-hover",
+              "id": "VariableID:332:3720",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "container-active": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4431372582912445,
+              0.18431372940540314,
+              0.20392157137393951
+            ],
+            "alpha": 1
+          },
+          "$description": "Нажатие на подложку.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/container-active",
+              "id": "VariableID:332:3721",
+              "scopes": [
+                "FRAME_FILL",
+                "SHAPE_FILL"
+              ]
+            }
+          }
+        },
+        "on-container": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1,
+              0.5764706134796143,
+              0.5764706134796143
+            ],
+            "alpha": 1
+          },
+          "$description": "Текст и иконки на подложке.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "error/on-container",
+              "id": "VariableID:332:3722",
+              "scopes": [
+                "SHAPE_FILL",
+                "TEXT_FILL",
+                "STROKE_COLOR"
+              ]
+            }
+          }
+        }
+      },
+      "blue": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.14509804546833038,
+            0.4745098054409027,
+            0.8980392217636108
+          ],
+          "alpha": 1
+        },
+        "$extensions": {
+          "com.design-harness.figma": {
+            "name": "blue",
+            "id": "VariableID:334:6856",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
       }
     }
   },
   "radius": {
-    "md": {
+    "4": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/4",
+          "id": "VariableID:235:2057",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/8",
+          "id": "VariableID:235:2058",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "12": {
       "$type": "dimension",
       "$value": {
         "value": 12,
         "unit": "px"
       },
-      "$description": "Базовое среднее скругление."
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/12",
+          "id": "VariableID:235:2061",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": {
+        "value": 16,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/16",
+          "id": "VariableID:235:2062",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "24": {
+      "$type": "dimension",
+      "$value": {
+        "value": 24,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/24",
+          "id": "VariableID:235:2065",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "32": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/32",
+          "id": "VariableID:235:2069",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    },
+    "full": {
+      "$type": "dimension",
+      "$value": {
+        "value": 999,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "radius/full",
+          "id": "VariableID:235:2074",
+          "scopes": [
+            "CORNER_RADIUS"
+          ]
+        }
+      }
+    }
+  },
+  "size": {
+    "44": {
+      "$type": "dimension",
+      "$value": {
+        "value": 44,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "size/44",
+          "id": "VariableID:235:2082",
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    },
+    "56": {
+      "$type": "dimension",
+      "$value": {
+        "value": 56,
+        "unit": "px"
+      },
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "size/56",
+          "id": "VariableID:235:2083",
+          "scopes": [
+            "WIDTH_HEIGHT"
+          ]
+        }
+      }
+    }
+  },
+  "font": {
+    "size": {
+      "heading": {
+        "h2": {
+          "$type": "dimension",
+          "$value": {
+            "value": 20,
+            "unit": "px"
+          },
+          "$description": "Заголовки экранов и компактное приветствие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/heading/h2",
+              "id": "VariableID:235:2084",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "h3": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          },
+          "$description": "Заголовки карточек и быстрых действий.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/heading/h3",
+              "id": "VariableID:235:2087",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "h1": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          },
+          "$description": "Приветствие на экране помощника.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/heading/h1",
+              "id": "VariableID:235:2090",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "h4": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Компактные заголовки блоков и диапазонов.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/heading/h4",
+              "id": "VariableID:235:2093",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        }
+      },
+      "text": {
+        "body": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Основной текст и ввод сообщения.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/text/body",
+              "id": "VariableID:235:2096",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "label": {
+          "$type": "dimension",
+          "$value": {
+            "value": 14,
+            "unit": "px"
+          },
+          "$description": "Кнопки, подписи действий и заголовки метрик.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/text/label",
+              "id": "VariableID:235:2099",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "caption": {
+          "$type": "dimension",
+          "$value": {
+            "value": 11,
+            "unit": "px"
+          },
+          "$description": "Подписи осей, легенды и единицы.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/text/caption",
+              "id": "VariableID:235:2102",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "small": {
+          "$type": "dimension",
+          "$value": {
+            "value": 13,
+            "unit": "px"
+          },
+          "$description": "Короткая подпись или статус.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/text/small",
+              "id": "VariableID:263:4907",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "footnote": {
+          "$type": "dimension",
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          },
+          "$description": "Табы и подписи выбранного измерения.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/text/footnote",
+              "id": "VariableID:263:4910",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        }
+      },
+      "display": {
+        "metric": {
+          "$type": "dimension",
+          "$value": {
+            "value": 44,
+            "unit": "px"
+          },
+          "$description": "Крупное числовое показание метрики.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/size/display/metric",
+              "id": "VariableID:263:4913",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "line": {
+      "heading": {
+        "h2": {
+          "$type": "dimension",
+          "$value": {
+            "value": 26,
+            "unit": "px"
+          },
+          "$description": "Заголовки экранов и компактное приветствие.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/heading/h2",
+              "id": "VariableID:235:2085",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "h3": {
+          "$type": "dimension",
+          "$value": {
+            "value": 22,
+            "unit": "px"
+          },
+          "$description": "Заголовки карточек и быстрых действий.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/heading/h3",
+              "id": "VariableID:235:2088",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "h1": {
+          "$type": "dimension",
+          "$value": {
+            "value": 30,
+            "unit": "px"
+          },
+          "$description": "Приветствие на экране помощника.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/heading/h1",
+              "id": "VariableID:235:2091",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "h4": {
+          "$type": "dimension",
+          "$value": {
+            "value": 20,
+            "unit": "px"
+          },
+          "$description": "Компактные заголовки блоков и диапазонов.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/heading/h4",
+              "id": "VariableID:235:2094",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "text": {
+        "body": {
+          "$type": "dimension",
+          "$value": {
+            "value": 21,
+            "unit": "px"
+          },
+          "$description": "Основной текст и ввод сообщения.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/text/body",
+              "id": "VariableID:235:2097",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "label": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          },
+          "$description": "Кнопки, подписи действий и заголовки метрик.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/text/label",
+              "id": "VariableID:235:2100",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "caption": {
+          "$type": "dimension",
+          "$value": {
+            "value": 13,
+            "unit": "px"
+          },
+          "$description": "Подписи осей, легенды и единицы.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/text/caption",
+              "id": "VariableID:235:2103",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "small": {
+          "$type": "dimension",
+          "$value": {
+            "value": 18,
+            "unit": "px"
+          },
+          "$description": "Короткая подпись или статус.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/text/small",
+              "id": "VariableID:263:4908",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "footnote": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          },
+          "$description": "Табы и подписи выбранного измерения.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/text/footnote",
+              "id": "VariableID:263:4911",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "display": {
+        "metric": {
+          "$type": "dimension",
+          "$value": {
+            "value": 54,
+            "unit": "px"
+          },
+          "$description": "Крупное числовое показание метрики.",
+          "$extensions": {
+            "com.design-harness.figma": {
+              "name": "font/line/display/metric",
+              "id": "VariableID:263:4914",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "family": {
+      "$type": "fontFamily",
+      "$value": "SF Pro",
+      "$extensions": {
+        "com.design-harness.figma": {
+          "name": "font/family",
+          "id": "VariableID:235:2105",
+          "scopes": [
+            "FONT_FAMILY"
+          ]
+        }
+      }
     }
   }
 }
