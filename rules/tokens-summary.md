@@ -3,6 +3,8 @@
 Имена Figma для выбора привязки. Для цветов список общий для Light и Dark.
 Числовые шкалы и палитровые примитивы из списка исключены.
 
+Не привязывай `font/family` (`SF Pro`) напрямую к текстовым узлам. Всегда применяй [Text Styles](figma-styles.md#text-styles) `Health/Heading/*`, `Health/Text/*` или `Health/Display/*` на базе SB Sans.
+
 ## Поверхности, текст и обводка
 
 - `bg/page`
