@@ -11,6 +11,7 @@
 1. Открой [index.md](index.md), чтобы выбрать нужный маршрут.
 2. Прочитай [токены](rules/tokens-dtcg.json), [UX-эвристики](rules/ux-heuristics.md)
    и [дисциплину Figma](rules/figma-discipline.md).
+   Для проектирования сценариев открой [UX-паттерны](rules/ux-patterns.md).
 3. Открой только процедуру текущего этапа.
    - [Figma Make](.skills/figma-make-brief/SKILL.md) для брифа и разбора прототипа.
    - [Figma MCP](.skills/figma-mcp-build/SKILL.md) для сборки редактируемого макета.

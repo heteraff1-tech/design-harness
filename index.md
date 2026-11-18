@@ -4,7 +4,8 @@
 | --- | --- |
 | [AGENTS.md](AGENTS.md) | Роль, инварианты, порядок работы и критерии передачи. |
 | [rules/tokens-dtcg.json](rules/tokens-dtcg.json) | Стартовые примитивы уровня 1 в формате DTCG 2025.10. |
-| [rules/ux-heuristics.md](rules/ux-heuristics.md) | Плотность, ритм, антитревожные состояния, тапы и доступность. |
+| [rules/ux-heuristics.md](rules/ux-heuristics.md) | 10 эвристик Нильсена, плотность, ритм, антитревожные состояния и зоны тапа. |
+| [rules/ux-patterns.md](rules/ux-patterns.md) | Паттерны помощника, панели показателей, замеров, истории и отчётов. |
 | [rules/figma-discipline.md](rules/figma-discipline.md) | Auto Layout, именование, Variables, Text Styles и библиотека. |
 | [.skills/figma-make-brief/SKILL.md](.skills/figma-make-brief/SKILL.md) | Подготовка брифа для Make и перепривязка результата в Figma Design. |
 | [.skills/figma-mcp-build/SKILL.md](.skills/figma-mcp-build/SKILL.md) | Сборка фреймов через MCP с проверяемыми привязками. |
