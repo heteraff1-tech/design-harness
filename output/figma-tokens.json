@@ -1,0 +1,10 @@
+{
+  "$description": "Шаблон DTCG-выгрузки токенов для разработки. Заполняется при дизайн-аудите.",
+  "$extensions": {
+    "com.design-harness.handoff": {
+      "status": "template",
+      "briefId": null,
+      "briefRevision": null
+    }
+  }
+}
